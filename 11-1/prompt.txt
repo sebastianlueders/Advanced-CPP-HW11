@@ -1,0 +1,9 @@
+⚫ We discussed an implementation of
+remove_pointer that removes a pointer from a
+type
+⚫ remove_pointer_t<int **> is int *
+⚫ What if you wanted to remove all pointers?
+⚫ Define a remove_all_pointers trait that removes
+all pointers
+⚫ remove_all_pointers_t<int **> is int
+⚫ Don't forget to define its _t type alias template

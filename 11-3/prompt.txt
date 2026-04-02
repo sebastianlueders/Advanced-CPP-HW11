@@ -1,0 +1,21 @@
+⚫ We introduced empty tag types as a way to
+tag what type we care about.
+⚫ What if we care about several types
+⚫ We can create a type list
+template<typename ...Ts>
+struct typelist {};
+
+
+
+⚫ Can you write a metafunction that would replace
+the first occurrence of the type A in a typelist with
+B?
+using intBAB = Replace<typelist<int, A, A, B>,A, B>;
+static assert(is_same_v<intBAB, typelist<int, B, A, B>>);
+⚫ Next week, we will create many more
+metafunctions on typelists
+⚫ For extra credit, come up with more
+metafunctions for interrogating and transforming
+typelists
+⚫ Similar to how type traits interrogate and transform
+type

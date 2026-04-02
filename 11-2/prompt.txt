@@ -1,0 +1,9 @@
+⚫ Create your own implementations of the
+is_reference and remove_reference type traits
+⚫ Make sure they handle both rvalue references
+and lvalue references
+⚫ Be sure to define any relevant _t and _v versions
+⚫ Documentation like the cppreference page for
+is_reference often includes sample
+implementations, so you'll need to be careful not
+to inadvertently look at
